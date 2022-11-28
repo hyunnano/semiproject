@@ -1,0 +1,131 @@
+@charset "UTF-8";
+
+html {
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: #f1f5f8;
+}
+.form {
+    background: #ffffff;
+    display: flex;
+    box-shadow: 1px 1px 12px 1px #00000038;
+    border-radius: 20px;
+    padding: 30px;
+
+    flex-direction: column;
+}
+
+.form .header {
+    font-size: 1.6rem;
+    font-weight: 900;
+    border-bottom: 1px solid #000000;
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+    padding-left: 30px;
+}
+
+.form .header1 {
+    font-size: 1.6rem;
+    font-weight: 900;
+    border-bottom: 1px solid #000000;
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+    padding-left: 30px;
+}
+
+
+.form .button {
+    background: rgb(0, 0, 0);
+    height: 65px;
+    border-radius: 20px;
+    box-shadow: none;
+    border: none;
+    margin-top: 20px;
+    color: #fff;
+    font-weight: 400px;
+    font-size: 1.6rem;
+}
+
+.form .button1 {
+    background: rgb(0, 0, 0);
+    height: 65px;
+    border-radius: 20px;
+    box-shadow: none;
+    border: none;
+    margin-top: 20px;
+    color: #fff;
+    font-weight: 400px;
+    font-size: 1.6rem;
+}
+
+.yes>a{
+    text-decoration:none ;
+    background-color: rgb(0, 0, 0);
+    color: #fff;
+    border: 20px;
+    margin: 10px;
+    font-size: 15px;
+    display: inline-block;
+    border-radius: 5px;
+}
+.form .column-wrapper {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+.form .column-wrapper .column {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+}
+
+.field-block {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 10px 10px;
+    align-items: center;
+}
+
+.field-block .label{
+    font-weight: bolder;
+    display: flex;
+}
+
+.field-block .field {
+    display: flex;
+    flex-grow: 2;
+    margin-left: 10px;
+}
+
+.field-block .field input, .field-block .field select{
+    border: 1px solid #bcc3c8;
+    height: 50px;
+    width: 100%;
+    border-radius: 12px;
+    padding: 0 10px;
+}
+
+ul { list-style:none; }
+li {
+    display:inline-block;
+    margin:10px;
+}
+   li a {
+       padding: 5px 20px;
+       font-size: 14px;
+       color: rgb(0, 0, 0);
+       text-decoration: none;
+   }
+a[title |= "id"] {  /* 속성값이 "us"이거나 "us-"로 시작하는 요소를 찾는 선택자 */
+   background: url(images/us.png) no-repeat left center;
+}
+a[title |= "pass"] {  /* 속성값이 "jap"이거나 "jap-"로 시작하는 요소를 찾는 선택자 */
+   background: url(images/jp.png) no-repeat left center;
+}
